@@ -57,21 +57,6 @@
         </ul>
       </nav>
   </header>
-  <!-- <div class="main_visual visual">
-      <div class="gallery">
-        <ul>
-          <li>
-            <img src="./images/visual_01x2.jpg" alt="">
-          </li>
-          <li>
-            <img src="./images/visual_01x2.jpg" alt="">
-          </li>
-          <li>
-            <img src="./images/visual_01x2.jpg" alt="">
-          </li>
-        </ul>
-      </div>
-  </div> -->
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
@@ -83,15 +68,19 @@
         </div>
       </div>
       <div class="swiper-slide">
-        <img src="./images/visual_01x2.jpg" alt="">
+        <img src="./images/visual_02x2.jpg" alt="">
         <div class="slogan">
-          
+          <strong>고객만족,<br>인간성 존중</strong>
+          <span>전 사원이 혁신과 개선에 참여해 경쟁력을 키우는 
+            경영관리체계를 만들어 갑니다.</span>
         </div>
       </div>
       <div class="swiper-slide">
-        <img src="./images/visual_01x2.jpg" alt="">
+        <img src="./images/visual_03x2.jpg" alt="">
         <div class="slogan">
-          
+          <strong>지속가능한 미래의<br>성장동력 확보</strong>
+          <span>미래산업에 대한 투자와 환경친화적인 제품으로 
+            깨끗한 미래를 만들 것입니다.</span>
         </div>
       </div>
     </div>
@@ -172,13 +161,34 @@
               </dl>
             </div>
             <div class="swiper-slide">
-              <img src="./images/esg_01x2.jpg" alt="">
+              <img src="./images/esg_02x2.jpg" alt="">
+              <dl>
+                <dt>산업재해<br>ZERO</dt>
+                <dd>환경, 안전에 관련된 모든 법규와 
+                  회사 규정을 준수하며 모든 제품을 
+                  안전하게 제조하고 취급함으로써 
+                  산업재해를 제로화한다.</dd>
+              </dl>
             </div>
             <div class="swiper-slide">
-              <img src="./images/esg_01x2.jpg" alt="">
+              <img src="./images/esg_03x2.jpg" alt="">
+              <dl>
+                <dt>친환경<br>근무환경 조성</dt>
+                <dd>대기, 수질, 폐기물, 소음진동, 
+                  VOCs 관리를 통한 자연환경 보존을 위해 
+                  선진 환경경영체계를 구축하고 운영하며 
+                  오염방지와 개선활동을 지속적으로 추진한다.</dd>
+              </dl>
             </div>
             <div class="swiper-slide">
-              <img src="./images/esg_01x2.jpg" alt="">
+              <img src="./images/esg_04x2.jpg" alt="">
+              <dl>
+                <dt>저탄소<br>녹색성장</dt>
+                <dd>경영활동에서 자원과 에너지를 절약하고 
+                  효율적으로 이용하며 온실가스 배출 
+                  및 환경오염의 발생을 최소화하면서 
+                  사회적 윤리적 책임을 다한다.</dd>
+              </dl>
             </div>
           </div>
           <div class="swiper-pagination"></div>
@@ -247,7 +257,7 @@
     const progressCircle = document.querySelector(".autoplay-progress svg");
     const progressContent = document.querySelector(".autoplay-progress span");
     var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
+      spaceBetween: 0,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
