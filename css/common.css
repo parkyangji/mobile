@@ -49,7 +49,7 @@ table {border-collapse: collapse;}
 #wrap{ width:100%; position: relative;  overflow:hidden; font-family: 'Noto Sans KR','Lato', sans-serif;}
 
 /* 헤더공통 */
-#headerArea {width: 100%; height: 50px; position: fixed; top: 0; left: 0; z-index: 30; background: #fff;}
+#headerArea {width: 100%; height: 50px; position: fixed; top: 0; left: 0; z-index: 60; background: #fff;}
 #headerArea .header_top {height: 100%; padding: 0 15px; display: flex; justify-content: space-between; align-items: center;}
 #headerArea .header_top .logo a {
   width: 80px; height: 17px; text-indent: -999px;
@@ -61,14 +61,23 @@ table {border-collapse: collapse;}
     background-image: url(../images/logo_01.jpg);
   }
 }
-
 #headerArea .header_top .gnb_btn span {display: block; width: 25px; height: 2px; background: #333;
-  transition: all .3s; position: relative; z-index: 10; text-indent: -9999px; border-radius: 5px;}
+  transition: all .3s; position: relative; z-index: 110; text-indent: -9999px; border-radius: 5px;}
 #headerArea .header_top .gnb_btn span::before {content: ''; display: block;  width: 25px; height: 2px; background: #333; 
   transition: all .3s; position: absolute; left: 0; top: -7px; border-radius: 5px;}
 #headerArea .header_top .gnb_btn span::after {content: ''; display: block;  width: 25px; height: 2px; background: #333; 
   transition: all .3s; position: absolute; left: 0; top: 7px; border-radius: 5px;}
 
+
+#gnb {width: 100%; height: 100%; position: fixed; top: 0; right: 0; z-index: 100; background: #fff;}
+#gnb::before {content: ''; display: block; width: 70px; height: 33px; background-image: url(../images/logo_01x2.jpg);
+position: relative; top: 20px; left: 30px;}
+#gnb .mainMenu {position: relative; padding: 50px 30px; line-height: 5em;}
+#gnb .depth1 h3 a{font-size: 1.8em; font-weight: 500;}
+#gnb .depth1 ul {display: none; position: absolute; position: absolute; left: 180px; top: 60px;}
+#gnb .depth1 ul a {font-size: 1.4em;}
+#gnb .log {display: flex; justify-content: space-evenly;}
+#gnb .log a {font-size: 1.13em; color: #666;}
 
 
 /* 푸터공통 */

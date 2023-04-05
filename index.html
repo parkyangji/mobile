@@ -39,21 +39,46 @@
           <span>메뉴열기</span>
         </a>
       </div>
-      <nav id="gnb" class="hidden">
+      <nav id="gnb">
         <h2 class="hidden">글로벌네비게이션영역</h2>
-        <ul>
-          <li>
-            <h3>회사소개</h3>
+        <ul class="mainMenu">
+          <li class="depth1">
+            <h3><a href="#">회사소개</a></h3>
+            <ul>
+              <li><a href="#">기업개요</a></li>
+              <li><a href="#">기업문화</a></li>
+              <li><a href="#">연혁</a></li>
+              <li><a href="#">사업장</a></li>
+            </ul>
           </li>
-          <li>
-            <h3>제품소개</h3>
+          <li class="depth1">
+            <h3><a href="#">제품소개</a></h3>
+            <ul>
+              <li><a href="#">불화수소란</a></li>
+              <li><a href="#">특수가스</a></li>
+              <li><a href="#">2차전지소재</a></li>
+              <li><a href="#">무기불화물</a></li>
+              <li><a href="#">냉매</a></li>
+            </ul>
           </li>
-          <li>
-            <h3>ESG경영</h3>
+          <li class="depth1">
+            <h3><a href="#">ESG경영</a></h3>
+            <ul>
+              <li><a href="#">안전보건경영방침</a></li>
+              <li><a href="#">환경안전문화</a></li>
+              <li><a href="#">재해예방시스템</a></li>
+            </ul>
           </li>
-          <li>
-            <h3>고객지원</h3>
+          <li class="depth1">
+            <h3><a href="#">고객지원</a></h3>
+            <ul>
+              <li><a href="#">고객문의</a></li>
+            </ul>
           </li>
+        </ul>
+        <ul class="log">
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">회원가입</a></li>
         </ul>
       </nav>
   </header>
@@ -84,7 +109,7 @@
         </div>
       </div>
     </div>
-    <div class="swiper-pagination"></div>
+    <div class="swiper-scrollbar"></div>
   </div>
   <article id="content">
       <h2 class="hidden">본문콘텐츠영역</h2>
@@ -253,14 +278,15 @@
   <script src="./js/jquery-1.12.4.min.js"></script>
   <script src="./js/jquery-migrate-1.4.1.min.js"></script>
   <script>
-    
-    const progressCircle = document.querySelector(".autoplay-progress svg");
-    const progressContent = document.querySelector(".autoplay-progress span");
     var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 0,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        draggable: true,
       },
     });
 

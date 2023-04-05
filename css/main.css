@@ -19,14 +19,31 @@
   object-fit: cover;
 }
 
-.mySwiper .slogan {
-  position:absolute;
-  top: 90px;
-  padding: 15px; 
+.mySwiper .swiper-scrollbar {
+  border-radius: 0;
 }
 
-.mySwiper .slogan strong {display: block; margin-bottom: 15px; font-size: 2.15em; color: #fff;}
-.mySwiper .slogan span {display: block; color: #fff;}
+.mySwiper .swiper-scrollbar{
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  z-index: 50;
+  height: 5px;
+  width: 100%;
+}
+
+.mySwiper  .swiper-scrollbar-drag {
+  height: 100%;
+  position: relative;
+  background: #1f286f;
+  border-radius: 0;
+  left: 0;
+  top: 0;
+}
+
+.mySwiper .slogan {position:absolute;top: 90px; padding: 15px; }
+.mySwiper .slogan strong {display: block; margin-bottom: 15px; font-size: 2.15em; color: #fff; text-shadow: 0 0 8px #00000030;}
+.mySwiper .slogan span {display: block; color: #fff; text-shadow: 0 0 5px rgba(0,0,0,.3);}
 
 
 /* 본문 컨텐츠 */
@@ -37,10 +54,10 @@ section h3 {margin-top: 40px; text-align: center; font-size: 1.45em; font-weight
 /* 제품소개 */
 .introProduct {width: 100%;}
 .introProduct .HF_intro {width: 100%; min-width: 290px; height: 145px; background: #f9f9f9; 
-  box-sizing: border-box; padding: 20px; margin-top: 30px;}
+  box-sizing: border-box; padding: 10px; margin-top: 30px; display: flex; flex-direction: column; justify-content: center;}
 .introProduct .HF_intro h4 {font-size: 1.15em; font-weight: 500;}
 .introProduct .HF_intro p {text-align: justify; margin: 10px 0; color: #666;}
-.introProduct .HF_intro a {text-align: end;}
+.introProduct .HF_intro a {align-self: end;}
 
 .introProduct .products {display: grid; grid-template-columns: repeat(2, minmax(145px, auto)); margin-bottom: 45px; }
 .introProduct .products li {position: relative;}
@@ -61,15 +78,14 @@ section h3 {margin-top: 40px; text-align: center; font-size: 1.45em; font-weight
 .vision dl {flex: 1 1 0;}
 .vision dt {font-size: 1.15em; font-weight: 500; margin-bottom: 10px;}
 .vision a {width: 150px; height: 35px; margin: 0 auto;
-  font-size: 1.13em; text-align: center; line-height: 35px; color: #fff; background: #1f286fcc;}
+  font-size: 1.13em; text-align: center; line-height: 35px; color: #fff; background: #1f286f;}
 
 /* ESG경영 */
 
-.esg {width: 100%; height: 540px; }
+.esg {width: 100%;}
 
 .esg .swiper {
-  width: 275px;
-  height: 275px;
+  width: 90%;
   margin: 50px auto;
 }
 
@@ -86,7 +102,7 @@ section h3 {margin-top: 40px; text-align: center; font-size: 1.45em; font-weight
 }
 
 .esg .swiper-slide dl { width: 100%; height: 100%; padding: 40px 30px; box-sizing: border-box;
-  position: absolute; top: 0; color: #fff;}
+  position: absolute; top: 0; color: #fff; display: flex; flex-direction: column; justify-content: space-evenly;}
 .esg .swiper-slide dt {font-size: 1.45em; margin-bottom: 30px;}
 .esg .swiper-slide dd {text-align: justify;}
 
@@ -96,7 +112,7 @@ section h3 {margin-top: 40px; text-align: center; font-size: 1.45em; font-weight
 
 /* 고객문의 */
 
-.customerQA {width: 100%; height: 125px; margin: 0 0 35px; background-image: url(../images/qax2.jpg);
+.customerQA {width: 100%; height: 125px; margin: 65px 0 45px; background-image: url(../images/qax2.jpg);
   background-size: cover; background-position: center;}
 .customerQA h3 {margin: 10px 0; color: #fff;}
 .customerQA p { color: #fff; font-size: .9em; text-align: center; margin-bottom: 10px;}
