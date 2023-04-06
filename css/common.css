@@ -88,15 +88,16 @@ position: relative; top: 20px; left: 30px;}
 
 
 /* 푸터공통 */
-#footerArea {width: 100%;}
+#footerArea {width: 100%; background: #f0f0f0;}
 #footerArea .footer_top {display: flex; justify-content: space-evenly; align-items: center; padding: 10px 0;
-  border-top: 1px solid #f0f0f0; border-bottom: 1px solid #f0f0f0; }
+  border-bottom: 1px solid #d9d9d9; }
+#footerArea .footer_top a {color: #666;}
 #footerArea .footer_inner {padding: 15px; color: #666;}
 #footerArea .footer_inner .f_sns {display: flex; justify-content: space-around; padding-bottom: 15px;}
 #footerArea .footer_inner .f_sns i {font-size: 1.5em; }
 #footerArea .footer_inner .f_add address {font-size: 0.9em;}
 #footerArea .footer_inner .f_add p {margin: 10px 0; letter-spacing: -0.05em; font-size: 0.85em;}
-#footerArea .footer_inner .f_family {position: relative; background-color: #f0f0f0;}
+#footerArea .footer_inner .f_family {position: relative; background: #d9d9d9;}
 #footerArea .footer_inner .f_family a {padding: 10px 15px; color: #666; font-weight: 500;}
 #footerArea .f_family>a.on {background: #1f296f; color: #fff;}
 #footerArea .f_family ul {display: none; position: absolute; left: 0; bottom: 40px; background: #f0f0f0; width: 100%;}

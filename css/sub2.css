@@ -1,6 +1,9 @@
+/* 서브 메인 비주얼 */
+.main {background-image: url(../images/subvisual_02x2.jpg);}
+
 /* 제품 리스트 */
 #content {width: 100%;}
-.content_area .product_list {display: grid; grid-template-columns: repeat(2, minmax(145px, auto)); padding: 10px;}
+.content_area .product_list {display: grid; grid-template-columns: repeat(2, minmax(145px, auto));}
 .content_area .product_list li {position: relative;}
 .content_area .product_list li .name {position: absolute; z-index: 10; left: 50%; top: 50%; transform: translate(-50%, -50%);
   font-size: 1.45em; font-weight: 500; color: #1f296f;}

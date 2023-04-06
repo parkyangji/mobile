@@ -1,0 +1,23 @@
+/* 서브 메인 비주얼 */
+.main {background-image: url(../images/subvisual_02x2.jpg);}
+
+/* 사업장 */
+#content {width: 100%;}
+.content_area{padding: 15px; box-sizing: border-box; overflow: hidden; margin-bottom: 30px;}
+
+.tabs {margin: 30px 0;}
+.tabs li {float: left; width: 50%; text-align: center;}
+.tabs li a {padding: 10px; font-size: 1.13em; background: #f7f7f7;}
+.tabs .current {background: #1f296f; color: #fff;}
+.tabs ul::after {content: ''; display: block; clear: both;}
+
+#content section #map1, #map2 {width: 100%; height: 300px;}
+dt {font-size: 1.15em; font-weight: 500; margin-bottom: 10px;}
+.info1 {display: flex; flex-wrap: wrap; gap: 10px; text-align: center; padding: 20px 0 50px;}
+.info1 dl:nth-of-type(1) {flex-basis: 100%;}
+.info1 dl:nth-of-type(2) {flex: 1 1 0;}
+.info1 dl:nth-of-type(3) {flex: 1 1 0;}
+.info2 {background: #f7f7f7; padding: 15px;}
+.info2 dd {text-align: justify;}
+.info2 dd:nth-of-type(1) {margin-bottom: 10px;}
+.info2 span {display: block; color: #999; margin-bottom: 5px;}
