@@ -1,0 +1,24 @@
+/* 제품 리스트 */
+#content {width: 100%;}
+.content_area .product_list {display: grid; grid-template-columns: repeat(2, minmax(145px, auto)); padding: 10px;}
+.content_area .product_list li {position: relative;}
+.content_area .product_list li .name {position: absolute; z-index: 10; left: 50%; top: 50%; transform: translate(-50%, -50%);
+  font-size: 1.45em; font-weight: 500; color: #1f296f;}
+.content_area .product_list li .more {position: absolute; left: 50%; top: 50%; transform: translate(-50%, 20px);}
+.content_area .product_list li img{width: 100%; opacity: .5;}
+
+/* 모달창 */
+.modal_box {display: block; width: 100%; height: 100%; padding: 0 15px; box-sizing: border-box;
+  position: fixed; left: 0; top: 0; z-index: 200; background: #fff; overflow-y: scroll;}
+.img_inner {width: 50%; margin: 0 auto;}
+.img_inner img {width: 100%;}
+.conduct_info li {}
+.conduct_info dt {}
+.conduct_info dd {}
+.conduct_spec table {width: 100%; margin-top: 10px;}
+.conduct_spec th,td {border: 1px solid #d9d9d9; padding: 5px;}
+.conduct_spec th {background: #f7f7f7; border-bottom: 0;}
+td:nth-child(1) {width: 60%; text-align: center;}
+td:nth-child(2) {width: 18%;}
+td:nth-child(3) {width: 22%;}
+#close_btn {position: fixed; top: 0; right: 10px; font-size: 2em;}

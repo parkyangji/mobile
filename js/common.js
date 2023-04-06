@@ -15,17 +15,17 @@ $(".gnb_btn").click(function() {
 });
 
 
-$(".depth1 a").click(function(e) {
+$(".depth1 h3 a").click(function(e) {
   e.preventDefault();
   $(".depth1").find('ul').hide();
-  $(".depth1 a").css('color', '#333');
+  $(".depth1 h3 a").css('color', '#333');
   $(this).css('color', '#1f296f');
   $(this).parent().next().fadeIn();
 })
 
 
   
-var smh=$('.mySwiper').height()-$('#headerArea').height();  
+var smh=$('.main').height()-$('#headerArea').height();  
 
  $(window).on('scroll',function(){
         var scroll = $(window).scrollTop();  
