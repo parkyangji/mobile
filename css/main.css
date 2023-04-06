@@ -1,45 +1,13 @@
 /* 메인 비주얼 */
 
-.mySwiper {
-  position: relative;
-  margin-top: 50px;
- }
-
-.mySwiper .swiper-slide {
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.mySwiper .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.mySwiper .swiper-scrollbar {
-  border-radius: 0;
-}
-
-.mySwiper .swiper-scrollbar{
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  z-index: 50;
-  height: 5px;
-  width: 100%;
-}
-
-.mySwiper  .swiper-scrollbar-drag {
-  height: 100%;
-  position: relative;
-  background: #1f286f;
-  border-radius: 0;
-  left: 0;
-  top: 0;
-}
+.mySwiper {position: relative; margin-top: 50px;}
+.mySwiper .swiper-slide {background: #fff; display: flex; justify-content: center; align-items: center;}
+.mySwiper .swiper-slide img {display: block; width: 100%; height: 100%; object-fit: cover;}
+.mySwiper .swiper-scrollbar {border-radius: 0;}
+.mySwiper .swiper-scrollbar{position: absolute; left: 0; bottom: -5px; 
+  z-index: 50; height: 5px; width: 100%;}
+.mySwiper .swiper-scrollbar-drag {height: 100%; position: relative; left: 0; top: 0;
+  background: #1f286f; border-radius: 0;}
 
 .mySwiper .slogan {position:absolute;top: 90px; padding: 15px; }
 .mySwiper .slogan strong {display: block; margin-bottom: 15px; font-size: 2.15em; color: #fff; text-shadow: 0 0 8px #00000030;}
@@ -57,7 +25,6 @@ section h3 {margin-top: 40px; text-align: center; font-size: 1.45em; font-weight
   box-sizing: border-box; padding: 10px; margin-top: 30px; display: flex; flex-direction: column; justify-content: center;}
 .introProduct .HF_intro h4 {font-size: 1.15em; font-weight: 500;}
 .introProduct .HF_intro p {text-align: justify; margin: 10px 0; color: #666;}
-.introProduct .HF_intro a {align-self: end;}
 
 .introProduct .products {display: grid; grid-template-columns: repeat(2, minmax(145px, auto)); margin-bottom: 45px; }
 .introProduct .products li {position: relative;}
@@ -83,23 +50,9 @@ section h3 {margin-top: 40px; text-align: center; font-size: 1.45em; font-weight
 /* ESG경영 */
 
 .esg {width: 100%;}
-
-.esg .swiper {
-  width: 90%;
-  margin: 50px auto;
-}
-
-.esg .swiper-slide {
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-
-.esg .swiper-slide img {
-  display: block;
-  width: 100%;
-  filter: brightness(.7);
-}
+.esg .swiper {width: 90%; margin: 50px auto;}
+.esg .swiper-slide {background-position: center; background-size: cover; position: relative;}
+.esg .swiper-slide img {display: block; width: 100%; filter: brightness(.7);}
 
 .esg .swiper-slide dl { width: 100%; height: 100%; padding: 40px 30px; box-sizing: border-box;
   position: absolute; top: 0; color: #fff; display: flex; flex-direction: column; justify-content: space-evenly;}
@@ -112,9 +65,10 @@ section h3 {margin-top: 40px; text-align: center; font-size: 1.45em; font-weight
 
 /* 고객문의 */
 
-.customerQA {width: 100%; height: 125px; margin: 65px 0 45px; background-image: url(../images/qax2.jpg);
-  background-size: cover; background-position: center;}
-.customerQA h3 {margin: 10px 0; color: #fff;}
-.customerQA p { color: #fff; font-size: .9em; text-align: center; margin-bottom: 10px;}
+.customerQA {width: 100%; height: 155px; margin: 65px 0 45px; background-image: url(../images/qax2.jpg);
+  background-size: cover; background-position: center; 
+  display: flex; flex-direction: column; justify-content: center; gap: 10px;}
+.customerQA h3 {color: #fff; margin-top: 0;}
+.customerQA p { color: #fff; font-size: .9em; text-align: center;}
 .customerQA a { color: #fff; width: 130px; height: 30px; margin: 0 auto;
   text-align: center; line-height: 30px; background: transparent; border: 1px solid rgba(255,255,255,.8);}

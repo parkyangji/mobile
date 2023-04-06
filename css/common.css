@@ -61,22 +61,29 @@ table {border-collapse: collapse;}
     background-image: url(../images/logo_01.jpg);
   }
 }
-#headerArea .header_top .gnb_btn span {display: block; width: 25px; height: 2px; background: #333;
+
+#headerArea .header_top .gnb_btn {height: 50px;}
+#headerArea .header_top .gnb_btn span {display: block; width: 25px; height: 2px; margin-top: 25px; background: #333;
   transition: all .3s; position: relative; z-index: 110; text-indent: -9999px; border-radius: 5px;}
 #headerArea .header_top .gnb_btn span::before {content: ''; display: block;  width: 25px; height: 2px; background: #333; 
   transition: all .3s; position: absolute; left: 0; top: -7px; border-radius: 5px;}
 #headerArea .header_top .gnb_btn span::after {content: ''; display: block;  width: 25px; height: 2px; background: #333; 
   transition: all .3s; position: absolute; left: 0; top: 7px; border-radius: 5px;}
 
+#headerArea.mn_open .header_top .gnb_btn span {background: rgba(255,255,255,0);} 
+#headerArea.mn_open .header_top .gnb_btn span::before {transform: rotate(45deg); top: 0;}
+#headerArea.mn_open .header_top .gnb_btn span::after {transform: rotate(-45deg); top: 0;}
 
-#gnb {width: 100%; height: 100%; position: fixed; top: 0; right: 0; z-index: 100; background: #fff;}
+
+
+#gnb {width: 100%; height: 100%; position: fixed; top: 0; right: -100%; z-index: 100; background: #fff;}
 #gnb::before {content: ''; display: block; width: 70px; height: 33px; background-image: url(../images/logo_01x2.jpg);
 position: relative; top: 20px; left: 30px;}
-#gnb .mainMenu {position: relative; padding: 50px 30px; line-height: 5em;}
-#gnb .depth1 h3 a{font-size: 1.8em; font-weight: 500;}
+#gnb .mainMenu {position: relative; padding: 50px 30px;}
+#gnb .depth1 h3 a{font-size: 1.8em; font-weight: 500; line-height: 5rem;}
 #gnb .depth1 ul {display: none; position: absolute; position: absolute; left: 180px; top: 60px;}
-#gnb .depth1 ul a {font-size: 1.4em;}
-#gnb .log {display: flex; justify-content: space-evenly;}
+#gnb .depth1 ul a {font-size: 1.3em; line-height: 4rem;}
+#gnb .log {display: flex; gap: 30px; padding-left: 30px;}
 #gnb .log a {font-size: 1.13em; color: #666;}
 
 
@@ -89,10 +96,17 @@ position: relative; top: 20px; left: 30px;}
 #footerArea .footer_inner .f_sns i {font-size: 1.5em; }
 #footerArea .footer_inner .f_add address {font-size: 0.9em;}
 #footerArea .footer_inner .f_add p {margin: 10px 0; letter-spacing: -0.05em; font-size: 0.85em;}
-#footerArea .footer_inner .f_family {background-color: #f0f0f0;}
+#footerArea .footer_inner .f_family {position: relative; background-color: #f0f0f0;}
 #footerArea .footer_inner .f_family a {padding: 10px 15px; color: #666; font-weight: 500;}
+#footerArea .f_family>a.on {background: #1f296f; color: #fff;}
+#footerArea .f_family ul {display: none; position: absolute; left: 0; bottom: 40px; background: #f0f0f0; width: 100%;}
 
 
+/* 상단이동 */
+.topMove {display: none; width: 50px; height: 50px; border-radius: 50%; background: #1f296f;
+  position: fixed; z-index: 80; bottom: 50px; right: 10px;}
+.topMove::before {content: "\f1e0"; font-family: 'Material Symbols Outlined'; font-variation-settings:'FILL' 0,'wght' 200,'GRAD' 0,'opsz' 48;
+  font-size: 2.5em; display: block; text-align: center; color: #fff;}
 
 
 
