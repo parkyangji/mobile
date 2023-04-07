@@ -1,0 +1,18 @@
+/* 서브 메인 비주얼 */
+.main {background-image: url(../images/subvisual_03x2.jpg); background-position: center}
+
+/* 환경안전문화 */
+#content {width: 100%;}
+
+div h4 {font-size: 1.5em; font-weight: 700; margin-bottom: 20px;}
+
+.esg_goal, .esg_conduct {padding: 15px;}
+.esg_goal li {padding: 13px; margin-bottom: 10px; text-align: justify; color: #fff;}
+.esg_goal li:nth-of-type(odd) { background: linear-gradient(300deg, #1f296f, #2d3ca3); }
+.esg_goal li:nth-of-type(even) { background: linear-gradient(240deg, #1f296f, #2d3ca3); }
+
+.esg_conduct ul {}
+.esg_conduct li {}
+.esg_conduct dl {padding: 10px 0 30px; border-top: 2px solid #333;}
+.esg_conduct dt {font-size: 1.15em; font-weight: 500; margin-bottom: 10px;}
+.esg_conduct dd {line-height: 1.8em; text-align: justify;}

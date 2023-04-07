@@ -1,0 +1,30 @@
+/* 서브 메인 비주얼 */
+.main {background-image: url(../images/subvisual_03x2.jpg); background-position: center}
+
+/* 환경안전문화 */
+#content {width: 100%;}
+
+div h4 {font-size: 1.5em; font-weight: 700; margin-bottom: 20px;}
+
+.prevent_disasters, .prevent_earthquake {padding: 15px;}
+
+.prevent_disasters .disaster1 {padding: 10px 20px 10px 30px; margin-left: 20px; border-left: 1px solid #d9d9d9;}
+.prevent_disasters .disaster1 li {margin-bottom: 25px; font-size: 1.15em; position: relative;}
+.prevent_disasters .disaster1 li::before {content: ''; display: block; width: 10px; height: 10px;
+  border-top: 4px solid #348bcd; border-right: 4px solid;
+  position: absolute; left: -37px; top: 27px; transform: rotate(135deg);}
+.prevent_disasters .disaster1 li:last-of-type {margin-bottom: 0;}
+.prevent_disasters .disaster1 li:last-of-type:before {display: none;}
+.prevent_disasters .disaster2 {padding: 20px 30px 0 50px;}
+.prevent_disasters .disaster2 li {position: relative; line-height: 2em;}
+.prevent_disasters .disaster2 span {font-family: 'Lato'; position: absolute; left: -35px;
+  display: inline-block; font-size: 1.15em; font-weight: 700;}
+
+.prevent_earthquake .table_inner {width: calc(100% + 15px); padding-bottom: 20px; overflow-x: scroll;}
+.prevent_earthquake table {width: 650px; margin-right: 20px; text-align: center;}
+.prevent_earthquake td,th {border: 1px solid #d9d9d9; padding: 10px;}
+.prevent_earthquake th {background: #f7f7f7; border-bottom: 0;}
+.prevent_earthquake thead th:nth-child(1) {width: 10%;}
+.prevent_earthquake thead th:nth-child(2) {width: 45%;}
+.prevent_earthquake thead th:nth-child(3) {width: 45%;}
+

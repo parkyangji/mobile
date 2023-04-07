@@ -54,7 +54,21 @@ $('.f_family .open').toggle(family_open, family_close);
 
 
 $('.topMove').click(function(e){
-        e.preventDefault(); 
-        $("html,body").stop().animate({"scrollTop":0},1000);
-     });
+    e.preventDefault(); 
+    $("html,body").stop().animate({"scrollTop":0},1000);
+});
+
+
+
+$('.subNav>a').toggle(function(e){
+    e.preventDefault();
+    $(this).next('ul').stop().slideDown('fast');
+    $(this).parents('.subNav').addClass('on');
+
+}, function(e){
+    e.preventDefault();
+    $(this).next('ul').stop().slideUp('fast');
+    $(this).parents('.subNav').removeClass('on');
+});
+
 

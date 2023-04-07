@@ -1,0 +1,19 @@
+/* 서브 메인 비주얼 */
+.main {background-image: url(../images/subvisual_01x2.jpg);}
+
+/* 제품 리스트 */
+#content {width: 100%;}
+
+.history_list {width: 100%; padding: 30px 0; transition: all .5s;}
+.history_list.fixed {width: 100%; position: fixed; top: 50px; background: #fff; z-index: 60;
+  box-shadow: 0 2px 2px rgba(0,0,0,.2);}
+.history_list ul {display: flex; width: 800px; align-items: baseline; text-align: center; position: relative;}
+.history_list ul li {width: 200px;}
+.history_list ul li a {font-size: 1.15em; color: #666;}
+.history_list ul li a.li_current {font-size: 1.5em; font-weight: 700; color: #1f296f;}
+
+.text_area dl {margin: 20px; font-size: 1.15em;}
+.text_area dt {font-family: 'Lato'; font-size: 1.5rem;}
+.text_area dt span {margin-left: 15px; font-size: 1rem;}
+.text_area dd {}
+
