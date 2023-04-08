@@ -7,9 +7,15 @@
 section h3 {font-size: 1.5em; font-weight: 700; margin-bottom: 20px;}
 
 .ideology {padding: 15px;}
-.ide_list li {width: 50%; position: relative; margin: 10px 0;}
+.ide_list li {float: left; width: 50%; position: relative;}
 .ide_list li::after {content: ''; display: block; padding-bottom: 100%;}
+.ide_list ul {position: relative; max-width: 350px; margin: 0 auto;}
+.ide_list ul::before {content: ''; background: url(../images/ideology.jpg); background-size: cover;
+  display: block; position: absolute; bottom: 30px; right: 0;
+  width: 145px; height: 80px;}
+.ide_list ul::after {content: ''; display: block; clear: both;}
 .ide_list dl {position: absolute; top: 0; left: 0; width: 100%; height: 100%; box-sizing: border-box;
- background: #1f296f; border-radius: 50%; text-align: center; padding: 20px; }
-.ide_list dt {margin: 10%; font-size: 1.13em; font-weight: 500; margin-bottom: 10px; color: #fff;}
+ background: #1f296f; border-radius: 50%; text-align: center; padding: 20px;
+  display: flex; flex-direction: column; justify-content: center;}
+.ide_list dt {font-size: 1.13em; font-weight: 500; color: #fff;}
 .ide_list dd {color: #ddd;}
