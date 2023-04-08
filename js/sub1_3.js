@@ -1,15 +1,13 @@
-var history1 = $('.cont').eq(0).offset().top-120;
-var history2 = $('.cont').eq(1).offset().top-120;
-var history3 = $('.cont').eq(2).offset().top-120;
-var history4 = $('.cont').eq(3).offset().top-120;
-
+var history1 = $('.cont').eq(0).offset().top-140;
+var history2 = $('.cont').eq(1).offset().top-140;
+var history3 = $('.cont').eq(2).offset().top-140;
+var history4 = $('.cont').eq(3).offset().top-140;
 
 var navTop = $('.history_list').offset().top;
 
 $(window).on('scroll', function() {
     var scroll = $(window).scrollTop();
 
-    console.log(scroll)
     if(navTop-300<scroll){ 
       $('.history_list').addClass('fixed');
       $('#history1').css('margin-top', '90px');
@@ -17,7 +15,6 @@ $(window).on('scroll', function() {
       $('.history_list').removeClass('fixed');
       $('#history1').css('margin-top', '0');
     }
-
 
     $('.history_list ul li a').removeClass('li_current');
 
@@ -38,7 +35,6 @@ $(window).on('scroll', function() {
       $('.history_list ul').animate({left:-600},'fast').clearQueue();
 
     } else if (scroll<history1) {
-      $('.history_list ul li a').eq(0).addClass('li_current');
       $('.history_list ul').animate({left:0},'fast').clearQueue();
     }
 

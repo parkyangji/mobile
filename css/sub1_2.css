@@ -1,5 +1,15 @@
 /* 서브 메인 비주얼 */
 .main {background-image: url(../images/subvisual_01x2.jpg);}
 
-/* 제품 리스트 */
+/* 기업문화 */
 #content {width: 100%;}
+
+section h3 {font-size: 1.5em; font-weight: 700; margin-bottom: 20px;}
+
+.ideology {padding: 15px;}
+.ide_list li {width: 50%; position: relative; margin: 10px 0;}
+.ide_list li::after {content: ''; display: block; padding-bottom: 100%;}
+.ide_list dl {position: absolute; top: 0; left: 0; width: 100%; height: 100%; box-sizing: border-box;
+ background: #1f296f; border-radius: 50%; text-align: center; padding: 20px; }
+.ide_list dt {margin: 10%; font-size: 1.13em; font-weight: 500; margin-bottom: 10px; color: #fff;}
+.ide_list dd {color: #ddd;}

@@ -1,26 +1,23 @@
 /* 서브 메인 비주얼 */
 .main {background-image: url(../images/subvisual_01x2.jpg);}
 
-/* 제품 리스트 */
+/* 기업개요 */
 #content {width: 100%;}
 
-.swiper {
-  width: 100%;
-  height: 100%;
-}
+.slogan, .summary {padding: 15px; margin-bottom: 30px;}
+.slogan p {font-size: 1.3em;}
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+.summary {}
+.summary dl {display: flex; padding: 10px 0;}
+.summary dt {flex: 1 1 0;}
+.summary dd {flex-basis: 216px;}
+.summary img {width: 100%; height: 50vw;}
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+
+.about {padding: 15px; margin-bottom: 45px; background: #1f296f;}
+.about dl {padding: 20px 0; border-bottom: 1px solid #878eae;}
+.about li:first-of-type dl {padding-top: 0;}
+.about dt {font-size: 1.3em; font-weight: 700; margin-bottom: 10px; text-indent: 10px; color: #fff;}
+.about span {}
+.about dd {color: #878eae; line-height: 1.5em;}
+
