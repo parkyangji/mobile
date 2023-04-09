@@ -4,9 +4,13 @@
 /* 기업문화 */
 #content {width: 100%;}
 
+section, .slogan {padding: 15px; margin-bottom: 30px;}
 section h3 {font-size: 1.5em; font-weight: 700; margin-bottom: 20px;}
 
-.ideology {padding: 15px;}
+.slogan p {font-family: 'Lato'; font-size: 1.5em;}
+
+img {width: 100%;}
+
 .ide_list li {float: left; width: 50%; position: relative;}
 .ide_list li::after {content: ''; display: block; padding-bottom: 100%;}
 .ide_list ul {position: relative; max-width: 350px; margin: 0 auto;}
@@ -19,3 +23,15 @@ section h3 {font-size: 1.5em; font-weight: 700; margin-bottom: 20px;}
   display: flex; flex-direction: column; justify-content: center;}
 .ide_list dt {font-size: 1.13em; font-weight: 500; color: #fff;}
 .ide_list dd {color: #ddd;}
+
+.vision dl {padding: 10px 0 30px; border-top: 2px solid #333;}
+.vision dt {font-size: 1.15em; font-weight: 500; margin-bottom: 10px;}
+.vision dd {line-height: 1.8em; text-align: justify;}
+
+.motto {background: #f7f7f7; margin-bottom: 45px;}
+.motto li {width: 70%; height: 254px; max-width: 320px; border-radius: 30px; background: #f7f7f7;
+    margin: 0 auto 10%; padding: 20px; box-sizing: border-box; overflow: hidden; text-align: center;
+    box-shadow: 15px 15px 30px #f0f0f0, -15px -15px 30px #fff;
+    display: flex; flex-direction: column; justify-content: space-between;}
+.motto span {display: block; font-size: 1.3em; font-weight: 500; color: #1f296f;}
+.motto i {font-size: 5em;}
