@@ -33,23 +33,31 @@ img{border: 0; vertical-align: top}
   overflow: hidden; color: #fff}
 
 body {font-family: 'Noto Sans KR','Lato', sans-serif;}
-input {display: block; border: none; background: none; font-family: none; font-size: 1rem;}
+input {display: block; border: none; outline: none; background: none; font-family: none; font-size: 1rem;}
+select {border: none; outline: none; font-size: 1rem;}
 header {padding: 15px;}
 
+/* 탑메뉴 */
 header .topMenu {font-size: 1.3rem;overflow: hidden;}
 .topMenu span:first-child {float: left;}
 .topMenu span:last-child {float: right;}
 .topMenu a {color: #1f296f;}
 
-form input, form button {font-size: 1rem; font-family: none; border: none; background: transparent; outline: none;}
-select {border: none; outline: none; font-size: 1rem;}
 
+#content{padding: 15px; margin: 15px;}
+#content div{margin-bottom: 20px; overflow: hidden;}
 
-#content {padding: 15px; margin: 15px;}
-#content li {  margin-bottom: 30px;}
+input, select{width: 100%; background: #f7f7f7; padding: 20px; box-sizing: border-box;}
+div label{display: block; font-size: 1rem; margin-bottom: 5px;}
 
-form span {display: block;}
+.mail, .hp {padding: 10px;}
+.hp{width: 30%; float: left;}
+.symbol{width: 5%; float: left; line-height: 39px; text-align: center;}
+.mail:first-of-type {width: 35%; float: left;}
+.mail:last-of-type {width: 60%;}
 
+#content .button {display: flex; gap: 10px; margin-bottom: 0; margin-top: 40px;}
+.button input {background: #1f296f; color: #fff;}
 
 
 
