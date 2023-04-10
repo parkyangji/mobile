@@ -19,26 +19,26 @@ $(window).on('scroll', function() {
     }
 
 
-    $('.history_list ul li a').removeClass('li_current');
+    $('.history_list ul li').removeClass('li_current');
 
     if (scroll>=history1 && scroll<history2) {
-      $('.history_list ul li a').eq(0).addClass('li_current');
+      $('.history_list ul li').eq(0).addClass('li_current');
       $('.history_list ul').animate({left:0},'fast').clearQueue();
 
     } else if (scroll>=history2 && scroll<history3) {
-      $('.history_list ul li a').eq(1).addClass('li_current');
+      $('.history_list ul li').eq(1).addClass('li_current');
       $('.history_list ul').animate({left:-200},'fast').clearQueue();
 
     } else if (scroll>=history3 && scroll<history4) {
-      $('.history_list ul li a').eq(2).addClass('li_current');
+      $('.history_list ul li').eq(2).addClass('li_current');
       $('.history_list ul').animate({left:-400},'fast').clearQueue();
 
     } else if (scroll>=history4) {
-      $('.history_list ul li a').eq(3).addClass('li_current');
+      $('.history_list ul li').eq(3).addClass('li_current');
       $('.history_list ul').animate({left:-600},'fast').clearQueue();
 
     } else if (scroll<history1) {
-      $('.history_list ul li a').eq(0).addClass('li_current');
+      $('.history_list ul li').eq(0).addClass('li_current');
       $('.history_list ul').animate({left:0},'fast').clearQueue();
     }
 

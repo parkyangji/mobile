@@ -9,8 +9,8 @@
   box-shadow: 0 2px 2px rgba(0,0,0,.2);}
 .history_list ul {display: flex; width: 800px; height: 30px; align-items: end; text-align: center; position: relative;}
 .history_list ul li {width: 200px;}
-.history_list ul li a {font-size: 1.15em; color: #666;}
-.history_list ul li a.li_current {font-size: 1.5em; font-weight: 700; color: #1f296f;}
+.history_list ul li {font-size: 1.15em; color: #666;}
+.history_list ul li.li_current {font-size: 1.5em; font-weight: 700; color: #1f296f;}
 
 .text_area dl {margin: 30px; font-size: 1.15em;}
 .text_area dt {font-family: 'Lato'; font-size: 1.5rem; margin-bottom: 10px;}
