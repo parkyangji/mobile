@@ -4,7 +4,7 @@
 /* 안전보건경영방침 */
 #content {width: 100%;}
 
-.esg_policy {padding: 15px; background: #f7f7f7;}
+.esg_policy {padding: 40px 15px; background: #f7f7f7;}
 .esg_policy li {padding: 18px; margin-bottom: 20px; margin-left: 25px; 
   background: #fff; box-shadow: 0 0 5px #d9d9d9; position: relative;
   text-align: justify; line-height: 1.8em; border-radius: 10px; }
