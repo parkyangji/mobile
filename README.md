@@ -13,6 +13,10 @@ http://didwl214.cafe24.com/mobile/
 * 플러그인
   + Swifer.js
 
+## 🔎 웹표준 / 접근성
+* The W3C Markup Validation Service 검사 완료
+* 크로스 브라우징(크롬, 사파리, 엣지, 파이어폭스, 오페라) 테스트 완료
+
 ## 🌈 UI/UX
 1. 해상도 320 ~ 640px 모바일 기기 타겟
 2. 다양한 모바일 기기 적용을 위해 폰트 사이즈는 고정단위(px, rem), 이미지는 상대단위(%)를 사용하여
