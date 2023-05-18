@@ -15,7 +15,6 @@ http://didwl214.cafe24.com/mobile/
 
 ## 🔎 웹표준 / 접근성
 * The W3C Markup Validation Service 검사 완료
-* 크로스 브라우징(크롬, 사파리, 엣지, 파이어폭스, 오페라) 테스트 완료
 
 ## 🌈 UI/UX
 1. 해상도 320 ~ 640px 모바일 기기 타겟
