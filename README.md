@@ -3,7 +3,7 @@
 제작기간은 약 7일로, 디자인부터 코딩까지 100% 기여하였습니다.<br>
 
 ## 🔗 URL
-http://didwl214.cafe24.com/mobile/
+http://didwl214.mycafe24.com/mobile/
 
 ## ⚒️ STACKS
 * HTML
